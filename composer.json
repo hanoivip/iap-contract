@@ -1,0 +1,24 @@
+{
+    "name": "hanoivip/iap-contract",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+		"php" : ">=7.0.0",
+		"guzzlehttp/guzzle" : "^6.3",
+		"laravel/framework" : ">=5.5",
+		"laravel/tinker" : "~1.0",
+		"mervick/curl-helper" : "^2.2"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Hanoivip\\IapContract\\" : "src/"
+		}
+	},
+	"extra" : {
+		"laravel" : {
+			"providers" : [
+				"Hanoivip\\IapContract\\ModServiceProvider"
+			]
+		}
+	}
+}
